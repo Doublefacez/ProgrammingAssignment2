@@ -1,6 +1,14 @@
 #week 3 peer assessment
 
 makeCacheMatrix <- function(x = matrix()){
+  #Assuming x is a squre invertable matrix
+    ## return: a list containing functions to
+        ##              1. set the matrix
+        ##              2. get the matrix
+        ##              3. set the inverse
+        ##              4. get the inverse
+
+  
   mat <- NULL
   set<- function(y){
     x <<- y
@@ -12,6 +20,7 @@ makeCacheMatrix <- function(x = matrix()){
   list(set = set, get = get,
        setinverse = setinverse,
        getinverse = getinverse)
+  ##    this list is used as the input to cacheSolve()
 }
 
 
